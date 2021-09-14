@@ -1,0 +1,18 @@
+{
+    "board":[
+        {
+            "idx":1,
+            "name":"aa",
+            "title":"title",
+            "content":"content",
+            "wdate":"20210914"
+        },
+        {
+            "idx":2,
+            "name":"bb",
+            "title":"cccc",
+            "content":"dddd",
+            "wdate":"20210914"
+        }
+    ]
+}
