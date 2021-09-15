@@ -1,5 +1,6 @@
 import "./App.css";
-import mydata from "./db/mydata.json";
+import BoardList from "./components/BoardList";
+// import mydata from "./db/mydata.json";
 
 function App() {
   // fetch(url).then{}
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="adiv">
+        <BoardList />
+        {/* <div className="adiv">
           <a className="App-link" href="http://www.naver.com">
             naver
           </a>
@@ -33,7 +35,7 @@ function App() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
       </header>
     </div>
   );
