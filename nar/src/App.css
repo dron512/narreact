@@ -37,15 +37,15 @@
   }
 }
 
-.adiv{
-  background-color: red;
+.adiv {
+  background-color: rgb(155, 56, 56);
   width: 400px;
 }
-.bdiv{
+.bdiv {
   background-color: yellow;
-  width: 600px;
-  height: 300px;
+  width: 300px;
+  height: 150px;
 }
-.cdiv{
+.cdiv {
   background-color: blue;
 }

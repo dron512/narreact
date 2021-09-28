@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const BoardList = () => {
   const [rowData, setRowData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/rest/list")
+    fetch("http://localhost:8080/greeting")
       .then((res) => {
         return res.json();
       })
@@ -15,15 +15,9 @@ const BoardList = () => {
 
   return (
     <div>
-      {rowData.map((element) => {
-        console.log("test");
-        return (
-          <div key={element.id}>
-            <div>{element.name}</div>
-            <div>{element.content}</div>
-          </div>
-        );
-      })}
+      id = {rowData.id}
+      <br />
+      content = {rowData.content}
     </div>
   );
 };
