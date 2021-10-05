@@ -1,27 +1,32 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [data, setData] = useState({ id: "111", content: "cocococo" });
+  const [data, setData] = useState([{ grade: "111", cls: "cocococo" }]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/greeting?name=홍길동")
+    fetch("http://localhost:8080/getgrade")
       .then((result) => {
         return result.json();
       })
       .then((data) => {
-        // console.log(data);
         setData(data);
-        // data = res;
       });
   }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        id = {data.id}
-        <br />
-        content = {data.content}
+        <div className="container">
+          {data.map((d) => {
+            return (
+              <div>
+                {d.grade} 학년 {d.cls} 반
+              </div>
+            );
+          })}
+        </div>
       </header>
     </div>
   );
